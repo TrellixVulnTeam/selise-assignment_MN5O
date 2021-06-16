@@ -1,11 +1,11 @@
 mat-toolbar {
     height: 50px;
     background: #002b5c;
+    text-align: center;
 
     h1 {
         color: #fff;
         font-size: 32px;
-        margin-left: 550px;
     }
 }
 
@@ -18,5 +18,17 @@ mat-card {
 
     mat-card-title {
         font-size: 32px;
+    }
+}
+
+.cv-layout {
+    display: flex;
+    flex-direction: row wrap;
+
+    .cv-card {
+        flex: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

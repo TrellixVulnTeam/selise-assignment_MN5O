@@ -6,11 +6,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule} from '@angular/material/divider';
 import { MatCardModule} from '@angular/material/card';
+import {MatMenuModule} from '@angular/material/menu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { CVComponent } from './cv/cv.component';
 import { ApplicationComponent } from './application/application.component';
 import { InterviewerComponent } from './interviewer/interviewer.component';
@@ -20,7 +20,6 @@ import { FormComponent } from './form/form.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent,
     CVComponent,
     ApplicationComponent,
     InterviewerComponent,
@@ -36,7 +35,8 @@ import { FormComponent } from './form/form.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
