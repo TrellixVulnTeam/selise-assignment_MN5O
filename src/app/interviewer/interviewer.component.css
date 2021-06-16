@@ -1,0 +1,23 @@
+mat-toolbar {
+  height: 50px;
+  background: #002b5c;
+}
+
+mat-toolbar h1 {
+  color: #fff;
+  font-size: 32px;
+  margin-left: 600px;
+}
+
+mat-card {
+  width: 100px;
+  height: 150px;
+  margin: 10px;
+  color: #fff;
+  background: lightblue;
+}
+
+mat-card mat-card-title {
+  font-size: 24px;
+}
+/*# sourceMappingURL=interviewer.component.css.map */

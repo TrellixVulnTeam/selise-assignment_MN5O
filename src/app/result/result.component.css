@@ -1,0 +1,11 @@
+mat-toolbar {
+  height: 50px;
+  background: #002b5c;
+}
+
+mat-toolbar h1 {
+  color: #fff;
+  font-size: 32px;
+  margin-left: 550px;
+}
+/*# sourceMappingURL=result.component.css.map */

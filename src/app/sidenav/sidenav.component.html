@@ -1,0 +1,37 @@
+<mat-toolbar>
+  <!-- <button mat-icon-button *ngIf="sidenav.mode === 'over" (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened">
+          menu
+      </mat-icon>
+      <mat-icon *ngIf="sidenav.opened">
+          close
+      </mat-icon>
+  </button> -->
+  <h1>Application Dashboard</h1>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav">
+     <div class="logo">
+         <img src="../../assets/img/logo.png" alt="logo">
+     </div>
+     <mat-divider></mat-divider>
+     <button mat-button class="menu-button">
+         <mat-icon>assignment</mat-icon>
+         <span>CV List and Folders</span>
+     </button>
+     <button mat-button class="menu-button">
+          <mat-icon>question_answer</mat-icon>
+          <span>Interviewer</span>
+      </button>
+      <button mat-button class="menu-button">
+          <mat-icon>score</mat-icon>
+          <span>Result Declaration</span>
+      </button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+      <div class="content mat-elevation-z4">
+          Main Content
+      </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
