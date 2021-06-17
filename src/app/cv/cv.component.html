@@ -1,29 +1,38 @@
-<mat-toolbar>
+<div class="header">
     <h1>CV List and Folders</h1>
-</mat-toolbar>
+</div>
 
 <div class="content">
-    <div class="cv-layout">
-        <mat-card class="cv-card">
-            <mat-card-title>UX</mat-card-title>
-        </mat-card>
-        <mat-card class="cv-card">
-            <mat-card-title>UI</mat-card-title>
-        </mat-card>
-        <mat-card class="cv-card">
-            <mat-card-title>FE</mat-card-title>
-        </mat-card>
-    </div>
-   
-    <div class="cv-layout">
-        <mat-card class="cv-card">
-            <mat-card-title>BE</mat-card-title>
-        </mat-card>
-        <mat-card class="cv-card">
-            <mat-card-title>QA</mat-card-title>
-        </mat-card>
-        <mat-card class="cv-card">
-            <mat-card-title>CA</mat-card-title>
-        </mat-card>
+    <div fxLayout="row wrap" fxLayoutGap="16px grid" fxLayoutAlign="center center">
+        <div class="cards" fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="30%" fxLayoutAlign="center center">
+            <mat-card fxLayoutAlign="center center" class="card mat-elevation-z4">
+                <mat-card-title>UX</mat-card-title>
+            </mat-card>
+        </div>
+        <div class="cards" fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="30%" fxLayoutAlign="center center">
+            <mat-card fxLayoutAlign="center center" class="card mat-elevation-z4">
+                <mat-card-title>UI</mat-card-title>
+            </mat-card>
+        </div>
+        <div class="cards" fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="30%" fxLayoutAlign="center center">
+            <mat-card fxLayoutAlign="center center" class="card mat-elevation-z4">
+                <mat-card-title>FE</mat-card-title>
+            </mat-card>
+        </div>
+        <div class="cards" fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="30%" fxLayoutAlign="center center">
+            <mat-card fxLayoutAlign="center center" class="card mat-elevation-z4">
+                <mat-card-title>BE</mat-card-title>
+            </mat-card>
+        </div>
+        <div class="cards" fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="30%" fxLayoutAlign="center center">
+            <mat-card fxLayoutAlign="center center" class="card mat-elevation-z4">
+                <mat-card-title>QA</mat-card-title>
+            </mat-card>
+        </div>
+        <div class="cards" fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="30%" fxLayoutAlign="center center">
+            <mat-card fxLayoutAlign="center center" class="card mat-elevation-z4">
+                <mat-card-title>CA</mat-card-title>
+            </mat-card>
+        </div>
     </div>
 </div>

@@ -5,8 +5,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule} from '@angular/material/divider';
+import {FlexLayoutModule, FlexModule} from "@angular/flex-layout";
 import { MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatTableModule} from "@angular/material/table";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +20,7 @@ import { InterviewerComponent } from './interviewer/interviewer.component';
 import { ResultComponent } from './result/result.component';
 import { FormComponent } from './form/form.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,18 +30,22 @@ import { FormComponent } from './form/form.component';
     ResultComponent,
     FormComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatButtonModule,
-    MatIconModule,
-    MatDividerModule,
-    MatCardModule,
-    MatMenuModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatSidenavModule,
+        MatButtonModule,
+        MatIconModule,
+        MatDividerModule,
+        MatCardModule,
+        MatMenuModule,
+        FlexModule,
+        FlexLayoutModule,
+        MatPaginatorModule,
+        MatTableModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

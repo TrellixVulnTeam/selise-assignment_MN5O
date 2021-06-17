@@ -1,34 +1,19 @@
-mat-toolbar {
+.header {
     height: 50px;
-    background: #002b5c;
+    padding-top: 10px;
     text-align: center;
-
-    h1 {
-        color: #fff;
-        font-size: 32px;
-    }
-}
-
-mat-card {
-    width: 100px;
-    height: 150px;
-    margin: 10px;
     color: #fff;
-    background: lightblue;
+    border-radius: 5px;
+    background: #002b5c;
+}
+.cards {
+    margin-top: 50px;
 
-    mat-card-title {
-        font-size: 32px;
+    .card {
+        width: 250px;
+        height: 150px;
+        color: #fff;
+        background: gray;
     }
 }
 
-.cv-layout {
-    display: flex;
-    flex-direction: row wrap;
-
-    .cv-card {
-        flex: 30%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
