@@ -3,12 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { CVComponent } from './cv/cv.component';
 import { InterviewerComponent } from './interviewer/interviewer.component';
 import { ResultComponent } from './result/result.component'
+import { AdminComponent} from "./admin/admin.component";
+import {ApplicationComponent} from "./application/application.component";
 
 const routes: Routes = [
-  {path: '', component: CVComponent},
+  {path: 'admin', component: AdminComponent},
   {path: 'cv', component: CVComponent},
   {path: 'interviewer', component: InterviewerComponent},
-  {path: 'result', component: ResultComponent}
+  {path: 'result', component: ResultComponent},
+  {path: 'application', component: ApplicationComponent}
 ];
 
 @NgModule({

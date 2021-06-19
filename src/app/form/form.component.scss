@@ -7,35 +7,11 @@
 
     .application-form {
         max-width: 350px;
+        height: auto;
         margin: auto;
         border-radius: 5px;
-        background: #96bb72;
+        background: gray;
         padding: 20px;
-    }
-
-    input[type=text], input[type=number], input[type=email], select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
-
-    input[type=submit] {
-        width: 100%;
-        font-size: 18px;
-        background: cornflowerblue;
-        color: #fff;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-
-        &:hover {
-            background: #002b5c;
-        }
+        align-items: stretch;
     }
 }

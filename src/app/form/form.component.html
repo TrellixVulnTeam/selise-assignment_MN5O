@@ -1,23 +1,34 @@
 <div class="form-container">
     <div class="application-form">
-        <form action="">
-            <label>Your Name</label>
-            <input type="text" name="fullname" placeholder="Your Name">
-            <label>Your Email</label>
-            <input type="email" name="email" placeholder="Your Email">
-            <label>Contact Number</label>
-            <input type="number" name="contactNumber" placeholder="Contact Number">
-            <label for="position">Position</label>
-            <select id="position">
-                <option value="position">Select Position</option>
-                <option value="position">User Experience</option>
-                <option value="position">User Interface</option>
-                <option value="position">Front End</option>
-                <option value="position">Back End</option>
-                <option value="position">Quality Assurance</option>
-                <option value="position">CA</option>
-            </select>
-            <input type="submit" value="Submit">
-        </form>
+        <div class="form">
+            <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="pat@example.com" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Contact Number</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Select Position</mat-label>
+                <mat-select>
+                    <mat-option value="one">User Experience</mat-option>
+                    <mat-option value="two">User Interface</mat-option>
+                    <mat-option value="two">Front End</mat-option>
+                    <mat-option value="two">Back End</mat-option>
+                    <mat-option value="two">Quality Assurance</mat-option>
+                    <mat-option value="two">Business Analyst</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!--        <mat-form-field>-->
+            <!--            <button mat-button class="btn">-->
+            <!--                <span>Apply</span>-->
+            <!--            </button>-->
+            <!--        </mat-form-field>-->
+        </div>
     </div>
 </div>

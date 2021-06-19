@@ -5,11 +5,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule} from '@angular/material/divider';
-import {FlexLayoutModule, FlexModule} from "@angular/flex-layout";
+import { FlexLayoutModule, FlexModule} from "@angular/flex-layout";
 import { MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableModule} from "@angular/material/table";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import {MatOptionModule} from "@angular/material/core";
+import {MatSelectModule} from "@angular/material/select";
+import {MatInputModule} from "@angular/material/input";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,7 +23,7 @@ import { ApplicationComponent } from './application/application.component';
 import { InterviewerComponent } from './interviewer/interviewer.component';
 import { ResultComponent } from './result/result.component';
 import { FormComponent } from './form/form.component';
-
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,8 @@ import { FormComponent } from './form/form.component';
     ApplicationComponent,
     InterviewerComponent,
     ResultComponent,
-    FormComponent
+    FormComponent,
+    AdminComponent,
   ],
     imports: [
         BrowserModule,
@@ -44,7 +49,11 @@ import { FormComponent } from './form/form.component';
         FlexModule,
         FlexLayoutModule,
         MatPaginatorModule,
-        MatTableModule
+        MatTableModule,
+        MatFormFieldModule,
+        MatOptionModule,
+        MatSelectModule,
+        MatInputModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
