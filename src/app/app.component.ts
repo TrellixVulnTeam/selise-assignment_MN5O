@@ -2,6 +2,8 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import {Router} from "@angular/router";
+import { faFacebookSquare} from "@fortawesome/free-brands-svg-icons";
+import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 
 @Component({
   selector: 'app-root',
@@ -10,6 +12,8 @@ import {Router} from "@angular/router";
 })
 export class AppComponent implements OnInit{
   title = 'Assignment-CV-Bank';
+  faFacebookSquare = faFacebookSquare;
+  faTwitterSquare = faTwitterSquare;
 
   @ViewChild(MatSidenav) sidenav! : MatSidenav;
 

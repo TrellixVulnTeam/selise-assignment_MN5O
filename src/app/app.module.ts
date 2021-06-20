@@ -14,6 +14,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import {MatOptionModule} from "@angular/material/core";
 import {MatSelectModule} from "@angular/material/select";
 import {MatInputModule} from "@angular/material/input";
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -54,6 +55,7 @@ import { AdminComponent } from './admin/admin.component';
         MatOptionModule,
         MatSelectModule,
         MatInputModule,
+        FontAwesomeModule
     ],
   providers: [],
   bootstrap: [AppComponent]

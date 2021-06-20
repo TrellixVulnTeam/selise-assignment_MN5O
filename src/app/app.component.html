@@ -1,34 +1,39 @@
-<!--<div class="main-header">-->
-<!--    <div class="button">-->
-<!--        <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">-->
-<!--            <mat-icon *ngIf="!sidenav.opened">-->
-<!--                menu-->
-<!--            </mat-icon>-->
-<!--            <mat-icon *ngIf="sidenav.opened">-->
-<!--                close-->
-<!--            </mat-icon>-->
-<!--        </button>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<mat-sidenav-container>-->
-<!--    <mat-sidenav #sidenav="matSidenav">-->
-<!--        <button mat-button class="menu-button" (click)="redirectToApplicaton()">-->
-<!--            <mat-icon>people</mat-icon>-->
-<!--            <span>User Page</span>-->
-<!--        </button>-->
-<!--        <button mat-button class="menu-button">-->
-<!--            <mat-icon>supervised_user_circle</mat-icon>-->
-<!--            <span>Admin Dashboard</span>-->
-<!--        </button>-->
-<!--    </mat-sidenav>-->
-<!--    <mat-sidenav-content>-->
-<!--        <div class="content" fxLayoutAlign="center">-->
-<!--            <div class="logo">-->
-<!--                <img src="../../assets/img/logo.png" alt="logo">-->
-<!--                <mat-divider></mat-divider>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </mat-sidenav-content>-->
-<!--</mat-sidenav-container>-->
-
-<app-form></app-form>
+<div class="main-header">
+    <div class="button">
+        <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+            <mat-icon *ngIf="!sidenav.opened">
+                menu
+            </mat-icon>
+            <mat-icon *ngIf="sidenav.opened">
+                close
+            </mat-icon>
+        </button>
+    </div>
+</div>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav">
+        <div class="content" fxLayoutAlign="center">
+            <div class="logo">
+                <img src="../../assets/img/logo.png" alt="logo">
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <button mat-button class="menu-button" (click)="redirectToApplicaton()">
+            <mat-icon>people</mat-icon>
+            <span>User Page</span>
+        </button>
+        <button mat-button class="menu-button">
+            <mat-icon>supervised_user_circle</mat-icon>
+            <span>Admin Dashboard</span>
+        </button>
+        <div class="social-medial">
+            <fa-icon [icon]="faFacebookSquare"></fa-icon>
+            <fa-icon [icon]="faTwitterSquare"></fa-icon>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content" fxFlex="97">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

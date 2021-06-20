@@ -2,9 +2,11 @@
     height: 50px;
     padding-top: 10px;
     text-align: center;
-    color: #fff;
+    color: #002b5c;
+    border: 1px solid #7ea9cf;
     border-radius: 5px;
-    background: #002b5c;
+    box-shadow: 3px 5px lightgrey;
+    background: #7ea9cf;
 }
 .cards {
     margin-top: 50px;
@@ -12,8 +14,9 @@
     .card {
         width: 250px;
         height: 150px;
-        color: #fff;
-        background: rgba(5, 32, 64, 0.81);
+        color: #002b5c;
+        box-shadow: 3px 3px lightgrey;
+        background: #7ea9cf;
         cursor: pointer;
     }
 }
