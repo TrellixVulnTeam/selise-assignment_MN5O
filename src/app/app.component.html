@@ -18,7 +18,7 @@
             </div>
         </div>
         <mat-divider></mat-divider>
-        <button mat-button class="menu-button" (click)="redirectToApplicaton()">
+        <button mat-button class="menu-button" (click)="redirectToApplication()">
             <mat-icon>people</mat-icon>
             <span>User Page</span>
         </button>
@@ -26,13 +26,27 @@
             <mat-icon>supervised_user_circle</mat-icon>
             <span>Admin Dashboard</span>
         </button>
+        <div class="menu-sub-buttons">
+            <button mat-button class="menu-button" routerLink="/cv">
+<!--                <mat-icon>assignment</mat-icon>-->
+                <span>CV List and Folders</span>
+            </button>
+            <button mat-button class="menu-button" routerLink="/interviewer">
+<!--                <mat-icon>question_answer</mat-icon>-->
+                <span>Interviewer</span>
+            </button>
+            <button mat-button class="menu-button" routerLink="/result">
+<!--                <mat-icon>score</mat-icon>-->
+                <span>Result Declaration</span>
+            </button>
+        </div>
         <div class="social-medial">
             <fa-icon [icon]="faFacebookSquare"></fa-icon>
             <fa-icon [icon]="faTwitterSquare"></fa-icon>
         </div>
     </mat-sidenav>
     <mat-sidenav-content>
-        <div class="content" fxFlex="97">
+        <div class="content" fxFlex="95">
             <router-outlet></router-outlet>
         </div>
     </mat-sidenav-content>

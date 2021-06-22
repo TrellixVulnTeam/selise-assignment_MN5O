@@ -39,7 +39,7 @@ export class CVComponent implements OnInit {
   }
 
   redirectToInterviewDepartment(): void {
-    this.router.navigateByUrl('/interviewer');
+    this.router.navigateByUrl('/cvlist');
   }
 
 }

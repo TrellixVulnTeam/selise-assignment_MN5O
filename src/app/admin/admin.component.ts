@@ -2,6 +2,8 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import {Router} from "@angular/router";
+import { faFacebookSquare} from "@fortawesome/free-brands-svg-icons";
+import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 
 @Component({
   selector: 'app-admin',
@@ -10,6 +12,8 @@ import {Router} from "@angular/router";
 })
 export class AdminComponent implements OnInit {
   @ViewChild(MatSidenav) sidenav! : MatSidenav;
+    faFacebookSquare = faFacebookSquare;
+    faTwitterSquare = faTwitterSquare;
 
   constructor(private obsever: BreakpointObserver, private router: Router) {
 

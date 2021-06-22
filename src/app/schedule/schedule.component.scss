@@ -1,0 +1,22 @@
+.header {
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #7ea9cf;
+  box-shadow: 3px 5px lightgrey;
+  border-radius: 5px;
+  background: #7ea9cf;
+  margin-bottom: 50px;
+}
+
+table {
+  width: 100%;
+
+  .table-header {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    background: #7ea9cf;
+  }
+}

@@ -3,15 +3,15 @@
         <h1>Document<mat-icon>assignment</mat-icon></h1>
     </div>
     
-    <div class="application">
-        <div class="section-right">
-            <img src="../../assets/img/bg-img.svg" alt="img">
-        </div>
-        <div class="section-left">
+    <div class="application" fxLayout="row" fxLayout.xs="column" fxLayout.lt-lg="column">
+        <div class="section-left" fxLayout="column" fxFlex="40%" fxLayoutAlign="start center">
             <h1>Recruitment</h1>
-            <p>Apply for the various post that you think, you can best make use of your talents. 
-                Experience and qualification is not what matters but it is your passion and commitment</p>
-            <button class="btn">Apply</button>
+            <p>Apply for the various post that you think, you can best make use of your talents.
+                Experience and qualification is not what matters but it is your passion and commitment that matters the most.</p>
+            <button mat-raised-button class="btn" (click)="openDialog()">Apply</button>
+        </div>
+        <div class="section-right" fxFlex="60%">
+            <img src="../../assets/img/bg-img.svg" alt="img">
         </div>
     </div>
 </div>

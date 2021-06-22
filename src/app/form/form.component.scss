@@ -2,16 +2,26 @@
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     .application-form {
-        max-width: 350px;
         height: auto;
         margin: auto;
         border-radius: 5px;
-        background: gray;
         padding: 20px;
         align-items: stretch;
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        color: #ffffff;
+        background: #7ea9cf;
     }
 }

@@ -14,7 +14,16 @@ export class InterviewerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  teams = [
+    {name: 'UX Team'},
+    {name: 'UI Team'},
+    {name: 'FE Team'},
+    {name: 'BE Team'},
+    {name: 'QA Team'},
+    {name: 'BA Team'}
+  ]
+
 redirectToResult(): void {
-    this.router.navigateByUrl('/result');
+    this.router.navigateByUrl('/schedule');
   }
 }

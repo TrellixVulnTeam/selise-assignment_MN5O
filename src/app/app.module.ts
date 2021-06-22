@@ -15,6 +15,7 @@ import {MatOptionModule} from "@angular/material/core";
 import {MatSelectModule} from "@angular/material/select";
 import {MatInputModule} from "@angular/material/input";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { MatDialogModule } from "@angular/material/dialog";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +26,8 @@ import { InterviewerComponent } from './interviewer/interviewer.component';
 import { ResultComponent } from './result/result.component';
 import { FormComponent } from './form/form.component';
 import { AdminComponent } from './admin/admin.component';
+import { CvlistComponent } from './cvlist/cvlist.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,8 @@ import { AdminComponent } from './admin/admin.component';
     ResultComponent,
     FormComponent,
     AdminComponent,
+    CvlistComponent,
+    ScheduleComponent,
   ],
     imports: [
         BrowserModule,
@@ -55,9 +60,11 @@ import { AdminComponent } from './admin/admin.component';
         MatOptionModule,
         MatSelectModule,
         MatInputModule,
-        FontAwesomeModule
+        FontAwesomeModule,
+        MatDialogModule
     ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+    entryComponents: [FormComponent]
 })
 export class AppModule { }

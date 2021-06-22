@@ -35,7 +35,7 @@ const APPLICATION_DATA: ScoreSheet[] = [
     {name: 'Pema', position: 'User Interface', rating: 70, status: 'Selected'},
     {name: 'Choki', position: 'Front End', rating: 75, status: 'Selected'},
     {name: 'Sonam', position: 'User Experience', rating: 0, status: 'Did Not Turn Up'},
-    {name: 'Dorji', position: 'Back End', rating: 80, status: 'Selected'},
+    {name: 'Tashi', position: 'Back End', rating: 80, status: 'Selected'},
     {name: 'Namgay', position: 'User Interface', rating: 60, status: 'Selected'},
     {name: 'Jamtsho', position: 'Back End', rating: 68, status: 'Selected'},
     {name: 'Kinley', position: 'Front End', rating: 90, status: 'Selected'},

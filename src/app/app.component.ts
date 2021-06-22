@@ -39,7 +39,11 @@ export class AppComponent implements OnInit{
     });
   }
 
-  redirectToApplicaton(): void {
+  redirectToApplication(): void {
     this.router.navigateByUrl( '/application');
+  }
+
+  redirectToAdmin(): void {
+    this.router.navigateByUrl('/admin')
   }
 }

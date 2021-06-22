@@ -1,0 +1,29 @@
+.header {
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #7ea9cf;
+  border-radius: 5px;
+  box-shadow: 3px 5px lightgrey;
+  background: #7ea9cf;
+}
+.cards {
+  margin-top: 50px;
+
+  img {
+    width: 100%;
+  }
+
+  .card {
+    width: 250px;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 3px 3px lightgrey;
+    background: #7ea9cf;
+    cursor: pointer;
+  }
+}
+
